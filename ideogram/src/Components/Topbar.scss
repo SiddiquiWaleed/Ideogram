@@ -1,0 +1,23 @@
+.topbar-root {
+  background: #23232b !important;
+  color: #fff;
+  box-shadow: none;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #18181b;
+  border-radius: 8px;
+  padding: 0 0.5rem;
+}
+
+.search-icon {
+  color: #888;
+}
+
+.search-input {
+  color: #fff;
+  margin-left: 0.5rem;
+  width: 220px;
+} 

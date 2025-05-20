@@ -1,0 +1,33 @@
+.sidebar-container {
+  width: 8%;
+  background: #27272A;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #52525B;
+}
+.sidebar-list-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-list {
+  padding-top: 1rem;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding-bottom: 1rem;
+}
+
+.MuiListItem-root {
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.MuiListItemIcon-root {
+  min-width: 0;
+  color: #fff;
+} 

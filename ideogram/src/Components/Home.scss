@@ -1,0 +1,21 @@
+.home-root {
+  .home-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .MuiCard-root {
+    background: #23232b;
+    color: #fff;
+  }
+}
+
+.layout-root {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+} 
