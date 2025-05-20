@@ -1,13 +1,12 @@
 .topbar-root {
-  background: #23232b !important;
-  color: #fff;
-  box-shadow: none;
+  box-shadow: none !important;
+  color: rgb(39, 39, 42) !important;
+  background: #F7F7F8 !important;
 }
 
 .search-container {
   display: flex;
   align-items: center;
-  background: #18181b;
   border-radius: 8px;
   padding: 0 0.5rem;
 }

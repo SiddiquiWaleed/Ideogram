@@ -8,30 +8,45 @@ import HomeIcon from '@mui/icons-material/Home';
 import BrushIcon from '@mui/icons-material/Brush';
 import LayersIcon from '@mui/icons-material/Layers';
 import CollectionsIcon from '@mui/icons-material/Collections';
-import LoginIcon from '@mui/icons-material/Login';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import Avatar from '@mui/material/Avatar';
+import BoltIcon from '@mui/icons-material/Bolt';
 import './Sidebar.scss';
+import Logo from '../assets/Logo.svg';
 
 const navItems = [
-  { text: 'Home', icon: <HomeIcon /> },
-  { text: 'Creations', icon: <CollectionsIcon /> },
-  { text: 'Sign in', icon: <LoginIcon />, bottom: true },
+  { text: 'Creations', icon: <HomeIcon /> },
+  { text: 'Explore', icon: <CollectionsIcon /> },
 ];
 
 const Sidebar = () => (
-<div className="sidebar-container">
+  <div className="sidebar-container">
+    
     <List className="sidebar-list">
-      {navItems.filter(item => !item.bottom).map((item) => (
+    <div className="sidebar-logo">
+      <img src={Logo} alt="Logo" />
+    </div>
+      {navItems.map((item) => (
         <ListItem button key={item.text} className="sidebar-list-item">
           <ListItemIcon>{item.icon}</ListItemIcon>
-          <ListItemText primary={item.text} />
+          <ListItemText primary={item.text} className="sidebar-list-item-text" />
         </ListItem>
       ))}
     </List>
     <div className="sidebar-bottom">
-      <ListItem button key="Sign in">
-        <ListItemIcon><LoginIcon /></ListItemIcon>
-        <ListItemText primary="Sign in" />
-      </ListItem>
+      <div className="sidebar-bell">
+        <NotificationsNoneIcon  />
+      </div>
+      <div className="sidebar-avatar">
+        <Avatar alt="User" src="https://randomuser.me/api/portraits/men/32.jpg" sx={{ width: 26, height: 26 }} />
+      </div>
+      <div className="sidebar-upgrade-card">
+        <div className="sidebar-upgrade-text">
+          <BoltIcon className="sidebar-bolt"  />
+          <div className="sidebar-upgrade-count">12</div>
+        </div>
+        <div className="sidebar-upgrade-label">Upgrade</div>
+      </div>
     </div>
   </div>
 );

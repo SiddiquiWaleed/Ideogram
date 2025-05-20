@@ -1,24 +1,87 @@
 .sidebar-container {
-  width: 8%;
-  background: #27272A;
-  color: #fff;
+  width: 4%;
+  background: #FFFFFF;
+  color: rgb(82 80 91);
   display: flex;
+  padding: 8px;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1px solid #52525B;
+  border-right: 1px solid #D4D4D8;
 }
-.sidebar-list-item{
+.sidebar-logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 64px;
+    min-width: 64px;
+}
+.sidebar-list-item{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  
+}
+.sidebar-list-item-text{
+    span{
+        font-size: 11px !important;
+    }
 }
 .sidebar-list {
   padding-top: 1rem;
 }
 
 .sidebar-bottom {
-  margin-top: auto;
-  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar-bell {
+  margin-bottom: 0.5rem;
+  color: #888;
+}
+
+.sidebar-avatar {
+  margin-bottom: 0.5rem;
+ 
+}
+
+.sidebar-upgrade-card {
+  background: #ffe0eb ;
+  color: #ff4081 ;
+  border-radius: 6px ;
+  padding: 8px;
+  display: flex ;
+  align-items: center ;
+  flex-direction: column ;
+  font-weight: 600 ;
+  box-shadow: 0 2px 8px rgba(255, 64, 129, 0.08) ;
+}
+
+.sidebar-bolt {
+  color: #ff4081;
+  margin-bottom: 0.2rem;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.sidebar-upgrade-count {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sidebar-upgrade-label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.sidebar-upgrade-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .MuiListItem-root {
@@ -28,6 +91,6 @@
 }
 
 .MuiListItemIcon-root {
-  min-width: 0;
-  color: #fff;
+  min-width: 0 !important;
+  color: rgb(82 80 91) !important;
 } 
